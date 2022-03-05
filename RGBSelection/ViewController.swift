@@ -9,10 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var rgbView: UIView!
+    
+    @IBOutlet var redNumberLabel: UILabel!
+    @IBOutlet var greenNumberLabel: UILabel!
+    @IBOutlet var blueNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        rgbView.layer.cornerRadius = 20
     }
+    
+    @IBAction func redSliderValue(_ sender: Any) {
+        
+        
+    }
+    
 
 
 }
