@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet var blueSlider: UISlider!
     
     func colorViewChange() {
-        self.colorView.backgroundColor = UIColor (red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        colorView.backgroundColor = UIColor (red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
     
     override func viewDidLoad() {
@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         redNumberLabel.text = String(redSlider.value)
         greenNumberLabel.text = String(greenSlider.value)
         blueNumberLabel.text = String(blueSlider.value)
-        
     }
     
     @IBAction func redSliderAction() {
@@ -48,7 +47,5 @@ class ViewController: UIViewController {
         blueNumberLabel.text = String(blueSlider.value)
         colorViewChange()
     }
-    
-    
 }
 
